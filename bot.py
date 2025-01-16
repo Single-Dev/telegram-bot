@@ -30,9 +30,9 @@ async def send_welcome(message: types.Message):
     if not user_exists(user_id):
         add_user(user_id, full_name, username)
         if ADMIN_CHAT_ID:
-            await bot.send_message(ADMIN_CHAT_ID, f"New user started the bot: {full_name} (@{username})")
+            await bot.send_message(ADMIN_CHAT_ID, f"New beatiful user started the bot: {full_name} (@{username})")
 
-    await message.reply("Hi!\nI'm your bot!\nPowered by aiogram.")
+    await message.reply("Hi beatiful!\nI'm your bot!")
 
 @dp.message_handler(commands=['get_chat_id'])
 async def get_chat_id(message: types.Message):
